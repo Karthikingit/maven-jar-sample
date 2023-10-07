@@ -33,8 +33,8 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)'
-    Contents: 'target/*'
+    SourceFolder: '/__w/1/s/target/'
+    Contents: '*.jar'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)'
     
 - task: PublishBuildArtifacts@1
